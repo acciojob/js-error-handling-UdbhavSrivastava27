@@ -34,9 +34,3 @@ function evaluateExpression(expression) {
     console.error(error.name + ': ' + error.message);
   }
 }
-
-// Test cases
-evaluateExpression('1 + 2 * 3');        // No error
-evaluateExpression('1 + 2 * a');        // OutOfRangeError
-evaluateExpression('1 + + 2');          // InvalidExprError
-evaluateExpression('4 - -5 * 2');       // No error
